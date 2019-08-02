@@ -14,12 +14,18 @@
         top: 0;
         display: flex;
         transition: opacity 0.5s;
-        // opacity: 0;
+        opacity: 0;
         border: 7px solid #ffffff;
         background-image: url(../img/carousel-item-bg.png);
         background-position: 50% 50%;
         background-size: cover;
         box-shadow: 0 0 1px darken($light-color, 7%);
+
+        &.active {
+            position: relative;
+            z-index: 1;
+            opacity: 1;
+        }
 
         @media (max-width: $small) {
             flex-wrap: wrap;
