@@ -21,14 +21,14 @@
         background-size: cover;
         box-shadow: 0 0 1px darken($light-color, 7%);
 
+        @media (max-width: $small) {
+            flex-wrap: wrap;
+        }
+
         &.active {
             position: relative;
             z-index: 1;
             opacity: 1;
-        }
-
-        @media (max-width: $small) {
-            flex-wrap: wrap;
         }
 
         &__image {
