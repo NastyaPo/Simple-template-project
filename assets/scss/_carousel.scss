@@ -48,7 +48,7 @@
             }
 
             img {
-                min-width: 100%;
+                max-width: 100%;
             }
         }
 
@@ -74,7 +74,7 @@
                     overflow: hidden;
                     flex: 1 0 100%;
                     margin: 0 0 $gutter 0;
-                    max-width: calc(100vw- 135px);
+                    max-width: calc(100vw - 135px);
                     text-align: center;
                     white-space: nowrap;
                     text-overflow: ellipsis;
@@ -92,6 +92,7 @@
                 @media (max-width: $small) {
                     margin: 0 0 $gutter 0;
                     text-align: center;
+                    margin-bottom: 0;
                 }
             }
         }
